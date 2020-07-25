@@ -445,6 +445,10 @@ body {
         width: 320px;
     }
 
+    .campaign-details .row-2, .campaign-details .row-3{
+        margin-left: 0 !important;
+    }
+
     /* POST FEEDS STYLE */
     .post-feeds .post-feeds-row .left-align{
         display: flex;
