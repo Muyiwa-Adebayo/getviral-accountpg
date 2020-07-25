@@ -152,13 +152,13 @@ body {
     max-width: 20%;
 }
 
-.sidebar__lists .sidebar__link:hover{
+/* .sidebar__lists .sidebar__link:hover{
     background: var(--secondary-color);
 }
 
 .sidebar__lists .sidebar__link li:hover{
     color: var(--primary-text-color) !important;
-}
+} */
 
 .sidebar__list-active {
     background-color: #f0f7ff;
@@ -240,9 +240,8 @@ body {
     margin: 5rem 0;
 }
 
-.campaign-details .campaign-row{
-    display: flex;
-    justify-content: space-evenly;
+.campaign-details .row-2, .campaign-details .row-3{
+    margin-left: 6.5rem !important;
 }
 
 .campaign-details .campaign-card{
@@ -250,7 +249,7 @@ body {
     padding: 1.5rem 0.5rem 1rem 1rem;
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    width: 329px;
+    width: 329px
 }
 
 .campaign-card .campaign-title{
