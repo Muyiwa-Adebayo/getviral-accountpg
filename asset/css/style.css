@@ -72,6 +72,10 @@ body{
     border-radius: 20px;
 }
 
+.header{
+    font-weight: bold;
+}
+
 .row-content p{
     font-size: 18px;
     color: var(--secondary-color);
@@ -119,6 +123,12 @@ body{
         border-radius: 20px;
     }
 
+    .row-content p{
+        font-size: 18px;
+        width: 200px !important;
+        color: var(--secondary-color);
+    }
+
 }
 
 @media (min-width: 992px){
@@ -160,7 +170,7 @@ body{
         font-size: 1.45rem;
         text-align: justify;
     }
-    
+
     .account-content{
         margin: auto;
         width: 70%;
@@ -175,7 +185,8 @@ body{
     }
 
     .row-content p{
-        font-size: 16px;
+        font-size: 18px;
+        width: 120px;
         color: var(--secondary-color);
     }
 }
