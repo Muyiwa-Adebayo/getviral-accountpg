@@ -155,6 +155,12 @@ body{
         background-position: left 10% top 0%, left -1% bottom -14%;
         background-size: 80%, 40%;
     }
+
+    .left-text{
+        font-size: 1.45rem;
+        text-align: justify;
+    }
+    
     .account-content{
         margin: auto;
         width: 70%;
