@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* UTILITIES */
@@ -20,4 +21,56 @@
 
 body{  
     font-family: 'Source Sans Pro';
+    height: 100vh;
+}
+
+.left-content{
+    background: var(--background-color);
+    background-image: url('../img/Ellipse\ 2.svg'),
+                url('../img/Ellipse\ 3.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left 70% top 0%, left -1% bottom -14%;
+    background-size: 80%, 40%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-side{
+    margin-top: 6rem;
+}
+
+.left-title{
+    font-size: 51px;
+    line-height: 64px;
+    margin-bottom: 3rem;
+}
+
+.left-text{
+    font-size: 1.45rem;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.right-content{
+    background-image: url('../img/Polygon\ 1.svg'),
+                url('../img/Polygon\ 2.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left 70% top 0%, left -1% bottom -14%;
+    background-size: 80%, 40%;
+    overflow: hidden;
+}
+
+
+@media (min-width: 992px){
+    .section-wrap{
+        background-position: left 70% top 0%, left -1% bottom -14%;
+        background-size: 80%, 40%;
+    }
+}
+
+@media (min-width: 768px){
+    .section-wrap{
+        background-position: left 10% top 0%, left -1% bottom -14%;
+        background-size: 80%, 40%;
+    }
 }
