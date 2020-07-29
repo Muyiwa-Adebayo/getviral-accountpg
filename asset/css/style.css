@@ -9,15 +9,18 @@
 /* UTILITIES */
 :root{
     --primary-color: #362F74;
-    --secondary-color: #4F4F4F;
+    --secondary-color: #828282;
     --header-color: #333333;
     --primary-text-color: #362F74;
+    --hover-color: #221c55;
     --background-color: #D7D5E3;
 }
 
 .checker{
     border: 2px var(--primary-color) solid;
 }
+
+.py-6{padding-top: 6rem}
 
 body{  
     font-family: 'Source Sans Pro';
@@ -35,42 +38,157 @@ body{
     overflow: hidden;
 }
 
-.left-side{
-    margin-top: 6rem;
+.left-side-body{
+    margin-top: 4.3rem;
 }
 
-.left-title{
-    font-size: 51px;
-    line-height: 64px;
+.header-title{
+    font-size: 250%;
     margin-bottom: 3rem;
 }
 
 .left-text{
-    font-size: 1.45rem;
-    line-height: 40px;
+    font-size: 1rem;
     text-align: justify;
 }
 
 .right-content{
-    background-image: url('../img/Polygon\ 1.svg'),
-                url('../img/Polygon\ 2.svg');
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: left 70% top 0%, left -1% bottom -14%;
-    background-size: 80%, 40%;
+    background-image: url('../img/polygon.svg');
+    background-position: right 0% top 0%;
+    background-size: 41.6%;
+    background-repeat: no-repeat;
+    height: 100vh;
     overflow: hidden;
 }
 
+.account-card{
+    background: #fff;
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+.row-content p{
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.btn{
+    border: none;
+    width: 120px;
+    height: 57px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background: var(--hover-color);
+}
+
+.btn-primary{
+    background: var(--primary-color) ;
+}
+
+@media (min-width: 1200px){
+    .right-content {
+        background-position: right 0% top 0px;
+        background-size: 41.6%;
+    }
+
+    .left-side-body{
+        margin-top: 4.3rem;
+    }
+
+    .left-text{
+        font-size: 1.45rem;
+        text-align: justify;
+    }    
+    
+    .account-card{
+        background: #fff;
+        margin: auto;
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 0;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+    }
+
+}
 
 @media (min-width: 992px){
-    .section-wrap{
+    .left-content{
         background-position: left 70% top 0%, left -1% bottom -14%;
         background-size: 80%, 40%;
+    }
+
+    .right-content{
+        background-position: right 0% top 0px;
+        background-size: 41.6%;
+    }
+
+    .left-side-body{
+        margin-top: 5.3rem;
+    }
+
+    .left-text{
+        font-size: 1.45rem;
+        text-align: justify;
+    }
+
+    .btn{
+        border: none;
+        width: 190px;
+        height: 57px;
+        display: inline-block;
+        font-size: 18px;
     }
 }
 
 @media (min-width: 768px){
-    .section-wrap{
+    .left-content{
         background-position: left 10% top 0%, left -1% bottom -14%;
         background-size: 80%, 40%;
+    }
+    .account-content{
+        margin: auto;
+        width: 70%;
+    }
+    .account-card{
+        display: flex;
+        justify-content: space-around;
+        padding: 3rem 0;
+        width: 100%;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+    }
+
+    .row-content p{
+        font-size: 16px;
+        color: var(--secondary-color);
+    }
+}
+
+@media (max-width: 768px){
+    .left-content{
+        background-position: left 10% top 0%, left -1% bottom -14%;
+        background-size: 80%, 40%;
+    }
+    .account-content{
+        margin: auto;
+        width: 90%;
+    }
+    .account-card{
+        display: flex;
+        justify-content: space-around;
+        padding: 3rem 0;
+        width: 100%;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
     }
 }
