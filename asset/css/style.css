@@ -154,7 +154,7 @@ body{
         display: flex;
         justify-content: space-around;
         padding: 3rem 0;
-        width: 100%;
+        width: 85%;
         box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
         border-radius: 20px;
     }
@@ -182,7 +182,7 @@ body{
 
     .account-content{
         margin: auto;
-        width: 70%;
+        width: 90%;
     }
     .account-card{
         display: flex;
@@ -195,8 +195,35 @@ body{
 
     .row-content p{
         font-size: 18px;
-        width: 120px;
+        width: 190px;
         color: var(--secondary-color);
+    }
+}
+
+
+@media (min-width: 318px){
+    .right-content {
+        background-position: right 0% top 0px;
+        background-size: 41.6%;
+        overflow: hidden;
+    }
+    .account-content{
+        margin: auto;
+        width: 85%;
+    }
+    .account-card{
+        display: flex;
+        padding: 3rem 0.7rem;
+        width: 100%;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        margin-bottom: 4rem;
+    }
+    .account-card .row2{
+        padding-left: 2rem;
+    }
+    .account-card .row4{
+        padding-left: 3rem;
     }
 }
 
@@ -218,50 +245,30 @@ body{
     .right-content {
         background-position: right 0% top 0px;
         background-size: 41.6%;
+        height: 100%;
         overflow: hidden;
     }
     .account-content{
         margin: auto;
-        width: 90%;
+        width: 75%;
     }
     .account-card{
         display: flex;
-        padding: 3rem 1rem;
+        flex-wrap: wrap;
+        /* text-align: center; */
+        padding: 2rem 1rem;
         width: 100%;
         box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
         border-radius: 20px;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
     .account-card .row2{
-        padding-left: 2rem;
+        padding-left: 0rem !important;
+    }
+    .account-card .row3{
+        padding-right: 2rem !important;
     }
     .account-card .row4{
-        padding-left: 2.5rem;
-    }
-}
-
-@media (min-width: 318px){
-    .right-content {
-        background-position: right 0% top 0px;
-        background-size: 41.6%;
-        overflow: hidden;
-    }
-    .account-content{
-        margin: auto;
-        width: 100%;
-    }
-    .account-card{
-        display: flex;
-        padding: 3rem 1rem;
-        width: 100%;
-        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
-        border-radius: 20px;
-        margin-bottom: 4rem;
-    }
-    .account-card .row2{
-        padding-left: 2rem;
-    }
-    .account-card .row4{
-        padding-left: 3rem;
+        padding-left: 0rem !important;
     }
 }
