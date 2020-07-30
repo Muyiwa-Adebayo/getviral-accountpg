@@ -230,3 +230,29 @@ body{
         padding-left: 2.5rem;
     }
 }
+
+@media (max-width: 318px){
+    .right-content {
+        background-position: right 0% top 0px;
+        background-size: 41.6%;
+        overflow: hidden;
+    }
+    .account-content{
+        margin: auto;
+        width: 300px;
+    }
+    .account-card{
+        display: flex;
+        padding: 3rem 1rem;
+        width: 100%;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        margin-bottom: 4rem;
+    }
+    .account-card .row2{
+        padding-left: 2rem;
+    }
+    .account-card .row4{
+        padding-left: 2.5rem;
+    }
+}
