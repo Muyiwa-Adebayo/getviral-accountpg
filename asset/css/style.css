@@ -231,7 +231,7 @@ body{
     }
 }
 
-@media (max-width: 318px){
+@media (min-width: 318px){
     .right-content {
         background-position: right 0% top 0px;
         background-size: 41.6%;
@@ -253,6 +253,6 @@ body{
         padding-left: 2rem;
     }
     .account-card .row4{
-        padding-left: 2.5rem;
+        padding-left: 3rem;
     }
 }
